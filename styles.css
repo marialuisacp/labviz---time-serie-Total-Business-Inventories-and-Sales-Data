@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow|Nunito+Sans:300,300i,400,400i,600,600i,700&display=swap');
+
+body * {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Archivo Narrow', sans-serif;
+  color: #008C31;
+}
+
+h1 {
+  color: #006C11;
+}
+
+a {
+  text-decoration: none;
+  color: #999;
+}
+.content {
+  display: block;
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+svg {
+  display: block;
+  margin: 0 auto;
+}
+
+.axis {
+  font: 12px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #434343;
+  shape-rendering: crispEdges;
+}
+
+.source {
+  font-size: .8em;
+  text-align: right;
+}
+
+.source span {
+  font-style: italic;
+}
