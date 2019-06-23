@@ -22,22 +22,22 @@ const yAxis = d3.svg.axis()
     .orient("left")
     .ticks(10);
 
-let svg = d3.select("#area-visualization").append("svg")
+let svg = d3.select("#area-bar-chart").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
     .attr("transform", 
           "translate(" + margin.left + "," + margin.top + ")");
 
-d3.csv("total-business-inventories-to-sales-ratio.csv", function(error, data) {
+d3.csv("total-business-inventories-to-sales-ratio.csv", (error, data) => {
 
-  data.forEach(function(d) {
+  data.forEach((d) => {
       d.date = parseDate(d.date);
       d.value = +d.value;
   });
 	
-  x.domain(data.map(function(d) { return d.date; }));
-  y.domain([0, d3.max(data, function(d) { return d.value; })]);
+  x.domain(data.map((d) => d.date));
+  y.domain([0, d3.max(data, (d) => d.value)]);
 
   let i = 0;
   svg.append("g")

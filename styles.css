@@ -32,13 +32,18 @@ svg {
   font: 12px sans-serif;
 }
 
+path { 
+  stroke: #006C11;
+  stroke-width: 2;
+  fill: none;
+}
+
 .axis path,
 .axis line {
   fill: none;
   stroke: #434343;
   shape-rendering: crispEdges;
 }
-
 .source {
   font-size: .8em;
   text-align: right;
@@ -47,3 +52,4 @@ svg {
 .source span {
   font-style: italic;
 }
+

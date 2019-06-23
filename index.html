@@ -16,8 +16,9 @@
     <p>
       This is a dataset from the U.S. Census Bureau hosted by the Federal Reserve Economic Database (FRED). FRED has a data platform found here and they update their information according the amount of data that is brought in. Explore the U.S. Census Bureau using Kaggle and all of the data sources available through the U.S. Census Bureau organization page!
     </p>
+    <h2> Bar chart </h2>
   </div>
-  <div class="svg" id="area-visualization"></div>
+  <div class="svg" id="area-bar-chart"></div>
   <div class="svg" id="area-line"></div>
   <p class="source content">
     <span> Source: </span> 
@@ -25,7 +26,19 @@
       https://www.kaggle.com/census/total-business-inventories-and-sales-data
     </a> 
   </p>
+  <div class="content">
+    <h2> Line chart </h2>
+  </div>
+  <div class="svg" id="area-line-chart"></div>
+  <p class="source content">
+    <span> Source: </span> 
+    <a target='_blank' href="https://www.kaggle.com/census/total-business-inventories-and-sales-data">
+      https://www.kaggle.com/census/total-business-inventories-and-sales-data
+    </a> 
+  </p>
+
   <script src="https://d3js.org/d3.v3.min.js"></script>
-  <script src="scripts.js"></script>
+  <script src="bar_chart.js"></script>
+  <script src="line_chart.js"></script>
 </body>
 </html>
